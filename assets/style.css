@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Cinzel&family=Open+Sans+Condensed&family=Rajdhani:wght@300;600&display=swap");
+
+:root {
+    --Cinzel: 'Cinzel', serif;
+    --Anton: 'Anton', sans-serif;
+    --Condensed: 'Open Sans Condensed', sans-serif;
+    --Bebas: 'Bebas Neue', cursive;
+    --Rajdhani: 'Rajdhani', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+/* kogu projekti container  */
+.container {
+    max-width: 1500px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+}
+
+/* POSTER  */
+.position {
+    padding: 9em;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: var(--Anton);
+    margin: 0;
+    text-align: center;
+    color: rgb(65, 61, 57);
+}
+
+.position h1 {
+    font-size: 4.5em;
+}
+
+h1 span {
+    color: rgb(99, 172, 115);
+
+}
+
+.directions {
+    padding: 0.5em;
+}
+
+.poster {
+    background-image: url(festival70.jpg);
+    color: rgb(65, 61, 57);
+    height: 41rem;
+    padding: 0em 11em;
+
+}
+
+.textfont {
+    font-family: var(--Rajdhani);
+    color: rgb(65, 61, 57);
+}
+
+.linkfont {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.background {
+    background-color: rgb(216, 115, 112);
+    padding: 2em;
+}
+
+
+
+/* Piletite button  */
+.button {
+    display: inline-block;
+    border: none;
+    background: rgb(255, 236, 194);
+    color: rgb(56, 56, 56);
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Anton);
+}
+
+.button:hover {
+    background: rgb(114, 201, 133);
+}
+
+/* VISIOON */
+.vision {
+    background-image: url(festival8.jpg);
+    display: flex;
+    height: 20rem;
+    color: rgb(37, 35, 32);
+    padding: 2em 0 0 0;
+}
+
+
+/* LINEUP */
+.lineup {
+    background-color: rgb(74, 170, 130);
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    color: rgb(221, 221, 221);
+}
+
+.tickets {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.position3 {
+    background-color: rgb(74, 170, 130);
+}
+
+
+
+/* DAYS */
+.days {
+    min-height: 35rem;
+    padding-top: 2em;
+    background-image: url(festival8.jpg);
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+}
+
+
+/* MAPS */
+.maps {
+    background-image: url(maps.jpg);
+    height: 30rem;
+}
+
+
+
+/* ABOUT */
+.about {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* GENERAL */
+.col img {
+    max-width: 300px;
+}
+
+.col1 {
+    width: 25%;
+    padding: 1rem 0;
+}
+
+.col2 {
+    width: 50%;
+    padding: 1rem 0;
+}
+
+
+/* SMALL SCREEN  */
+@media (min-width : 0px) and (max-width:575px) {
+    .container {
+        width: fit-content;
+    }
+
+
+    /* POSTER */
+    .position {
+        padding: 4em 0;
+    }
+
+    .poster {
+        padding: 0em 3em;
+    }
+
+    .position h1 {
+        font-size: 4em;
+        font-family: var(--Anton);
+        margin: 0;
+    }
+
+    .button {
+        background-color: rgb(114, 201, 133);
+    }
+
+
+    /* VISION */
+    .vision {
+        display: block;
+        padding-top: 3em;
+        min-height: 15rem;
+
+    }
+
+    .visibility {
+        visibility: hidden;
+    }
+
+
+    /* LINEUP */
+    .tickets {
+        display: block;
+        margin: auto 0;
+    }
+
+    /* ABOUT */
+    .about {
+        display: block;
+        justify-content: space-evenly;
+    }
+
+    /* GENERAL */
+    .col1 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .col2 {
+        width: 100%;
+    }
+
+}
+
+/* MEDIUM SCREEN */
+@media (min-width : 576px) and (max-width:800px) {
+    .container {
+        width: fit-content;
+    }
+
+    .poster {
+        padding: 0em 4em;
+    }
+
+    .position {
+        padding: 6em 0em;
+    }
+
+    .position h1 {
+        font-size: 4em;
+        font-family: var(--Anton);
+        margin: 0;
+    }
+
+
+    .vision {
+        display: block;
+        padding-top: 3em;
+        min-height: 15rem;
+
+    }
+
+    .col2 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .visibility {
+        visibility: hidden;
+    }
+
+    /* ABOUT */
+    .about {
+        display: block;
+    }
+}
+
+/* LARGE SCREEN */
+@media (min-width :801px) and (max-width:1100px) {
+
+
+    .position {
+        min-width: 20em;
+        padding: 8em 0em;
+    }
+
+    .position h1 {
+        font-size: 4em;
+        font-family: var(--Anton);
+        margin: 0;
+    }
+
+}
